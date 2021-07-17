@@ -4,7 +4,7 @@
 2. Phone number: +375-29-872-47-29
 3. About me:
 I purposeful and loving to learn new. I dont have any work experience in programming, but i want realize that activity, because that a great opportunity for personal development.
-4. In college i was studied programming language Delpi.
+4. In college i was studied programming language Delphi.
 5. procedure TForm1.Button1Click(Sender: TObject);
 begin
 a := StrToFloat (Edit1.Text);
