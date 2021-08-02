@@ -378,9 +378,32 @@ textarea {
    .container {
        margin: 0 auto;
        max-width: 1440px;
-       height: 200px;   
    }
    header{
        background: #000;
+   }
+   ul{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 22px;
+    line-height: 50px;
+    color: #FFFFFF;;
+   }
+   .header-wrapper{
+       display: flex;
+       flex-wrap: wrap;
+       align-items: center;
+       justify-content: space-between;
+   }
+   .header-list{
+       display: flex;
+       flex-wrap: wrap;
+   }
+   .header-item{
+       margin-right: 76px;
+   }
+   .header-item :last-child{
+       margin-right: 0;
    }
   
