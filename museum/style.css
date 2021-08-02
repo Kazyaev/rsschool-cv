@@ -361,13 +361,13 @@ textarea {
 }
 @font-face {
     font-family: 'Forum';
-    font-style: normal;
+    src: url("assets/fonts/Forum-Regular.ttf");
     font-weight: normal;
-     src: url("assets/fonts/Forum-Regular.ttf");
    }
    @font-face {
     font-family: 'Roboto';
-     src: url("assets/fonts/Roboto-Black.ttf");
+    src: url("assets/fonts/Roboto-Thin.ttf");
+    font-weight: 100;
    }
    html {
        box-sizing: border-box;
@@ -375,35 +375,66 @@ textarea {
    *, *::before, *::after{
        box-sizing: inherit;
    }
-   .container {
-       margin: 0 auto;
-       max-width: 1440px;
-   }
    header{
-       background: #000;
+       background-color: black;
    }
-   ul{
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 200;
-    font-size: 22px;
-    line-height: 50px;
-    color: #FFFFFF;;
+   .container{
+       margin: 0 auto;
+       max-width: 1440px;  
+       height: 200px;
    }
    .header-wrapper{
        display: flex;
        flex-wrap: wrap;
-       align-items: center;
        justify-content: space-between;
+       align-items: center;
    }
+   .header-logo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 0;
+   }
+   .img-logo{
+    margin-top: 83px;
+    margin-bottom: 91px;
+   }
+   .p-louvre{
+    font-family: Forum;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 50px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-top: 74px;
+    margin-bottom: 76px;
+    margin-left: 21px;
+}
    .header-list{
        display: flex;
        flex-wrap: wrap;
    }
    .header-item{
-       margin-right: 76px;
+       margin: 76px;
+       margin-top: 74px;
+       margin-left: 0;
    }
-   .header-item :last-child{
+   .header-item:last-child{
        margin-right: 0;
    }
-  
+   .header-item:first-child{
+       margin-left: 525px;
+   }
+   .header-link{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 22px;
+    line-height: 50px;
+    color: #FFFFFF;
+    letter-spacing: 2px;
+    text-decoration: none;
+   }
