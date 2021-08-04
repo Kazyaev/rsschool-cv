@@ -438,3 +438,12 @@ textarea {
     letter-spacing: 2px;
     text-decoration: none;
    }
+   .section-title{
+    font-family: Forum;
+    font-style: normal;
+    font-weight: normal;
+    color: #FFFFFF;
+   }
+   .b-section{
+    background-color: black;
+   }
