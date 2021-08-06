@@ -1,0 +1,32 @@
+.rs {
+    text-align: center;
+    font-size: 18px;
+}
+.div {
+    
+    line-height: 22px;  
+    
+}   
+.footer {
+    position: relative;
+    top: 20px;
+    left: 5px
+} 
+@keyframes bl {
+    0% {
+      color: black;
+    }
+
+    50% {
+      color: blue
+    }
+
+    100% {
+      color: black;
+    }
+  }
+
+  .black-blue {
+    animation: bl 3s infinite;
+    text-align: center;
+  }
