@@ -375,13 +375,24 @@ textarea {
    *, *::before, *::after{
        box-sizing: inherit;
    }
-   header{
-       background-color: black;
-   }
+   
    .container{
-       margin: 0 auto;
-       max-width: 1440px;  
-       height: 200px;
+       max-width: 1920px;
+       margin: 0 auto; 
+       padding-left: 240px;
+       padding-right: 240px;         
+   }
+   .header{
+       position: relative;
+       top: 0;
+       left: 0;
+       width: 100%;
+   }
+   :root{
+       --b-color: black;
+   }
+   .fon{
+       background: var(--b-color);
    }
    .header-wrapper{
        display: flex;
@@ -437,4 +448,42 @@ textarea {
     color: #FFFFFF;
     letter-spacing: 2px;
     text-decoration: none;
+   }
+   .header-link:hover{
+    color: #9D8665;
+   }
+   .section-title{
+    font-family: Forum;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 80px;
+    line-height: 90px;
+    letter-spacing: 5px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+   }
+   .vel{
+       padding-top: 114px;
+   }
+   .vel-button{
+    width: 360px;
+    height: 75px;
+    background: #710707;
+    border-radius: 10px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+   }
+   .vel-p{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 33px;    
+    letter-spacing: 2px;
+    color: #FFFFFF;
    }
