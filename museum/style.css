@@ -410,7 +410,7 @@ textarea {
       box-sizing: border-box;
    }
    .logo{
-       background-image: url(/assets/svg/Louvre.svg);
+       background-image: url(./assets/svg/Louvre.svg);
        width: 49px;
        height: 26px;  
        display: inline-block;   
@@ -453,7 +453,7 @@ textarea {
        color:#9D8665;
    }
    .velcom{
-       background-image: url(/assets/img/Louvre.jpg);
+       background-image: url(./assets/img/Louvre.jpg);
        background-size: 1215px 750px;
        background-repeat: no-repeat;
        height: 750px;
