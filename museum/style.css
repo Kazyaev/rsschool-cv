@@ -362,12 +362,22 @@ textarea {
 @font-face {
     font-family: 'Forum';
     src: url("assets/fonts/Forum-Regular.ttf");
-    font-weight: normal;
+    font-weight: 400;
    }
    @font-face {
     font-family: 'Roboto';
     src: url("assets/fonts/Roboto-Thin.ttf");
     font-weight: 100;
+   }
+   @font-face {
+    font-family: 'Roboto';
+    src: url("assets/fonts/Roboto-Thin.ttf");
+    font-weight: 200;
+   }
+   @font-face {
+    font-family: 'Roboto';
+    src: url("assets/fonts/Roboto-Light.ttf");
+    font-weight: 300;
    }
    html {
        box-sizing: border-box;
@@ -375,115 +385,126 @@ textarea {
    *, *::before, *::after{
        box-sizing: inherit;
    }
-   
+   .dark{
+    background-color: #030303;
+   }
+   .header{
+    height: 200px;
+    width: 100%;  
+ }
    .container{
        max-width: 1920px;
        margin: 0 auto; 
        padding-left: 240px;
-       padding-right: 240px;         
+       padding-right: 240px;
+
    }
-   .header{
-       position: relative;
-       top: 0;
-       left: 0;
-       width: 100%;
-   }
-   :root{
-       --b-color: black;
-   }
-   .fon{
-       background: var(--b-color);
-   }
-   .header-wrapper{
-       display: flex;
-       flex-wrap: wrap;
-       justify-content: space-between;
-       align-items: center;
-   }
-   .header-logo{
+   .header-container{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    margin-left: 0;
+    height: 100%;
    }
-   .img-logo{
-    margin-top: 83px;
-    margin-bottom: 91px;
+   .header-logo{
+      box-sizing: border-box;
    }
-   .p-louvre{
-    font-family: Forum;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 28px;
-    line-height: 50px;
-    color: #FFFFFF;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    margin-top: 74px;
-    margin-bottom: 76px;
-    margin-left: 21px;
-}
+   .logo{
+       background-image: url(/assets/svg/Louvre.svg);
+       width: 49px;
+       height: 26px;  
+       display: inline-block;   
+   }
+   .logo-text{
+       font-size: 28px;
+       font-family: 'Forum';
+       font-style: normal;
+       font-weight: 400;
+       line-height: 50px;
+       letter-spacing: 5px;
+       color: #FFFFFF;
+       text-transform: uppercase;
+       display: inline-block;
+       margin-left: 21px;
+   }
    .header-list{
        display: flex;
        flex-wrap: wrap;
+       margin-top: 74px;
+       margin-bottom: 76px;
    }
    .header-item{
-       margin: 76px;
-       margin-top: 74px;
-       margin-left: 0;
+       margin-right: 76px;
    }
    .header-item:last-child{
        margin-right: 0;
    }
-   .header-item:first-child{
-       margin-left: 525px;
-   }
    .header-link{
-    font-family: Roboto;
-    font-style: normal;
+    Font-family: 'Roboto';
+    Font-style: 'Thin';
     font-weight: 100;
-    font-size: 22px;
-    line-height: 50px;
+    Font-size: 22px;
+    Line-height: 50px;
+    Letter-spacing: 2px;
     color: #FFFFFF;
-    letter-spacing: 2px;
     text-decoration: none;
    }
    .header-link:hover{
-    color: #9D8665;
+       color:#9D8665;
    }
-   .section-title{
-    font-family: Forum;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 80px;
-    line-height: 90px;
-    letter-spacing: 5px;
-    color: #FFFFFF;
+   .velcom{
+       background-image: url(/assets/img/Louvre.jpg);
+       background-size: 1215px 750px;
+       background-repeat: no-repeat;
+       height: 750px;
+       background-position: calc(50% + 352px) ;
+   }
+   .h2{
+    Font-family: 'Forum';
+    Font-style: normal;
+    font-weight: 400;
+    Font-size: 80px;
+    Line-height: 90px;
+    Letter-spacing: 5px;
+    color: #FFFFFF; 
     text-transform: uppercase;
    }
-   .vel{
-       padding-top: 114px;
+   .h2-pos{
+    padding-top: 114px;
    }
-   .vel-button{
-    width: 360px;
-    height: 75px;
-    background: #710707;
-    border-radius: 10px;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 28px;
-    letter-spacing: 0.05em;
-    color: #FFFFFF;
-   }
-   .vel-p{
-    font-family: Roboto;
-    font-style: normal;
+   .p1{
+    Font-family: 'Roboto';
+    Font-style: 'ligth';
     font-weight: 300;
-    font-size: 28px;
-    line-height: 33px;    
-    letter-spacing: 2px;
+    Font-size: 28px;
+    Line-height: 33px;
+    Letter-spacing: 2px;
     color: #FFFFFF;
    }
+   .p1-pos{
+       padding-top: 26px;
+       padding-bottom: 76px;
+   }
+   .v-button{
+       width: 360px;
+       height: 75px;
+       border-radius: 10px;
+       background-color: #710707;
+       Font-family: 'Roboto';
+       font-style: 'normal';
+       font-weight: 200;
+       font-size: 22px;
+       line-height: 26px;
+       letter-spacing: 2px;
+       color: #FFFFFF;
+       border: none;
+    }
+    .v-button:hover{
+        background-color: #9D8665;
+    }
+    .v-button-pos{
+        padding-bottom: 246px;
+    }
+
+   
+   
