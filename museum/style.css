@@ -486,6 +486,8 @@ textarea {
        padding-bottom: 76px;
    }
    .v-button{
+       display: block;
+       text-align: center;
        width: 360px;
        height: 75px;
        border-radius: 10px;
@@ -494,10 +496,10 @@ textarea {
        font-style: 'normal';
        font-weight: 200;
        font-size: 22px;
-       line-height: 26px;
+       line-height: 75px;
        letter-spacing: 2px;
        color: #FFFFFF;
-       border: none;
+       text-decoration: none;
     }
     .v-button:hover{
         background-color: #9D8665;
