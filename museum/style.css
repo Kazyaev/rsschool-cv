@@ -406,11 +406,8 @@ textarea {
     width: 100%;  
  }
    .container{
-       max-width: 1920px;
+       max-width: 1440px;
        margin: 0 auto; 
-       padding-left: 240px;
-       padding-right: 240px;
-
    }
    .header-container{
     display: flex;
@@ -454,7 +451,7 @@ textarea {
    }
    .header-link{
     Font-family: 'Roboto';
-    Font-style: 'Thin';
+    Font-style: Thin;
     font-weight: 100;
     Font-size: 22px;
     Line-height: 50px;
@@ -470,23 +467,23 @@ textarea {
        background-size: 1215px 750px;
        background-repeat: no-repeat;
        height: 750px;
-       background-position: calc(50% + 352px) ;
+       background-position: calc(50% + 352px);
    }
    .h2{
     Font-family: 'Forum';
-    Font-style: 'normal';
+    Font-style: normal;
     font-weight: 400;
     Font-size: 80px;
     Line-height: 90px;
     Letter-spacing: 5px;
     text-transform: uppercase;
    }
-   .h2-pos{
+   .h2v-pos{
     padding-top: 114px;
    }
    .p1{
     Font-family: 'Roboto';
-    Font-style: 'ligth';
+    Font-style: ligth;
     font-weight: 300;
     Font-size: 28px;
     Line-height: 33px;
@@ -505,7 +502,7 @@ textarea {
        border-radius: 10px;
        background-color: #710707;
        Font-family: 'Roboto';
-       font-style: 'normal';
+       font-style: normal;
        font-weight: 200;
        font-size: 22px;
        line-height: 75px;
@@ -529,7 +526,7 @@ textarea {
     .underline::after{
         position: absolute;
         content: "";
-        bottom: -25px;
+        bottom: -28px;
         left: 0;
         right: 0;
         height: 3px;
@@ -538,15 +535,17 @@ textarea {
     .tour{
         display: flex;
         flex-wrap: wrap; 
+        justify-content: space-between;  
         padding-top: 103px;
-        gap: 60px 77px;
+        gap: 77px 51px;
     }
     .none{
         text-decoration: none; 
+        display: block;
     }
     .h3{
         Font-family: 'Forum';
-        Font-style: 'normal';
+        Font-style: normal;
         font-weight: 400;
         Font-size: 32px;
         Line-height: 35px;
@@ -559,7 +558,7 @@ textarea {
     }
     .p-tour1{
         font-family: 'Roboto';
-        font-style: 'Thin';
+        font-style: Thin;
         font-size: 22px;
         line-height: 26px;
         color: #000000;
@@ -567,7 +566,7 @@ textarea {
     }
     .p-tour2{
         font-family: 'Roboto';
-        font-style: 'Thin';
+        font-style: Thin;
         font-size: 18px;
         line-height: 21px;
         color: #000000;
@@ -576,6 +575,60 @@ textarea {
     .tour .underline::after{
         bottom: -10px;
     }
+    
+    .explore{ 
+        height: 865px;
+        padding-top: 75px;
+        padding-bottom: 75px;
+    }
+    .explore-cont{
+        display: flex;
+        justify-content: space-between;
+    }
+    .p-explore{
+        font-family: 'Roboto';
+        font-style: 'light';
+        font-weight: 300;
+        font-size: 22px;
+        line-height: 38.5px;
+        color:#ffffff;
+        padding-bottom: 25px;
+    }
+    .p-explore:first-of-type{
+        margin-top: 103px;
+    }
+    .span-g{
+        color: #9D8665;
+    }
+    .explore-img{
+        background-image: url(./assets/img/explore.jpg);
+        height: 700px;
+        width: 720px;
+        padding-left: 60px;
+        margin-top: 15px;
+    }
+    .video{
+        height: 1009px;
+        padding-top: 90px;
+        padding-bottom: 75px;
+    }
+    .poster{
+        position: relative;
+        background-image: url(./assets/img/video.jpg);
+        width: 1440px;
+        height: 629px;
+    }
+    .play-button{
+        position: absolute;
+        top: 205px;
+        left: 610px;
+        background: transparent;
+        border: none;
+    }
+    .play-button:hover{
+        opacity: .5;
+    }
+
 
    
    
