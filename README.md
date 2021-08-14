@@ -1,2 +1,2 @@
 # rsschool-cv
-https://github.com/Kazyaev/rsschool-cv/tree/museum/museum
+https://Kazyaev.github.io/rsschool-cv/museum/
