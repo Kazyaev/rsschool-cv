@@ -590,7 +590,7 @@ textarea {
         font-style: 'light';
         font-weight: 300;
         font-size: 22px;
-        line-height: 38.5px;
+        line-height: 38px;
         color:#ffffff;
         padding-bottom: 25px;
     }
@@ -625,9 +625,103 @@ textarea {
         background: transparent;
         border: none;
     }
-    .play-button:hover{
+    .play-button:hover, .left-button:hover, .forward-button:hover, .right-button:hover, .sound-button:hover, .screen-button:hover{
         opacity: .5;
     }
+    .panel{
+        position: relative;
+        display: flex;
+        align-items: center;
+        background-color: #000000;
+        width: 1440px;
+        height: 85px;
+    }
+    .left-button{
+        padding-right: 41px;
+        padding-left: 41px;
+        background: transparent;
+        border: none;
+    }
+    .forward-button{
+        padding-right: 41px;
+        padding-left: 0;
+        background: transparent;
+        border: none;
+    }
+    .right-button{
+        padding-right: 41px;
+        padding-left: 0;
+        background: transparent;
+        border: none;
+    }
+    .progress-bar{     
+        background: linear-gradient(to right, #24809E 0%, #24809E 45%, #C4C4C4 45%, #C4C4C4 100%);
+        height: 8px;
+        width: 815px;
+        outline: none;
+        -webkit-appearance: none;
+        transition: background 450ms ease-in;
+       }
+       .progress-bar::-webkit-slider-thumb {
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        -webkit-appearance: none;
+        cursor: ew-resize;
+        background: #ffffff;
+       }
+       .ip{
+           padding-right: 41px;
+       }
+       .sound-button{
+           padding-right: 20px;
+           padding-left: 0;
+           background: transparent;
+           border: none;
+       }
+       .sound-bar{
+           background: linear-gradient(to right, #24809E 0%, #24809E 45%, #C4C4C4 45%, #C4C4C4 100%);
+           height: 8px;
+           width: 155px;
+           outline: none;
+          -webkit-appearance: none;
+           transition: background 450ms ease-in;
+       }
+       .sound-bar::-webkit-slider-thumb {
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        -webkit-appearance: none;
+        cursor: ew-resize;
+        background: #ffffff;
+       }
+       .sp{
+           padding-right: 48px;
+       }
+       .screen-button{
+        padding-right: 41px;
+        padding-left: 0;
+        background: transparent;
+        border: none;
+       }
+       .v-jorney{
+           display: flex;
+           justify-content: space-between;
+           padding-top: 40px;
+       }
+       .p-video{
+        font-family: 'Roboto';
+        font-style: 'light';
+        font-weight: 300;
+        font-size: 22px;
+        line-height: 38px;
+        color:#000000;
+        max-width: 720px;
+    }
+       
+
+
+    
 
 
    
