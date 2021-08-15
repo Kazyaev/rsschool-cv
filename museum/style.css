@@ -625,7 +625,7 @@ textarea {
         background: transparent;
         border: none;
     }
-    .play-button:hover{
+    .play-button:hover, .left-button:hover, .forward-button:hover, .right-button:hover{
         opacity: .5;
     }
     .panel{
