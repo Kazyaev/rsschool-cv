@@ -146,7 +146,7 @@
                 <div class="tickets-radio">
                     <h4 class="h4">Ticket Type</h4>
                     <label class="radio">Permanent exhibition
-                        <input type="radio" name="ticket type" value="Permanent exhibition">
+                        <input type="radio" name="ticket type" value="Permanent exhibition" checked>
                         <span class="span"></span>
                     </label>
                     <label class="radio">Temporary exhibition
@@ -157,6 +157,24 @@
                         <input type="radio" name="ticket type" value="Combined Admission">
                         <span class="span"></span>
                     </label>
+                </div> 
+                <div class="amount">
+                    <h4 class="h4">Amount</h4>
+                    <p>Basic 18+</p>
+                    <div class="button-container">
+                    <button type="button" class="button-m" onclick="this.nextElementSibling.stepDown()"></button>
+                    <input type="number" min="0" max="20" value="1" readonly class="number">
+                    <button type="button" class="button-p" onclick="this.previousElementSibling.stepUp()">+</button>
+                    </div>
+                    <p>Senior 65+</p>
+                    <div class="button-container">  
+                        <button type="button" class="button-m" onclick="this.nextElementSibling.stepDown()"></button>
+                        <input type="number" min="0" max="20" value="1" readonly class="number">
+                        <button type="button" class="button-p" onclick="this.previousElementSibling.stepUp()">+</button>
+                    </div>
+                    <h4 class="h4">Total €220</h4>
+                </div>   
+                </div>
                 </div>
             </div>
             </div>
