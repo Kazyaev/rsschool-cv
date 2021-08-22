@@ -379,6 +379,16 @@ textarea {
     src: url("assets/fonts/Roboto-Light.ttf");
     font-weight: 300;
    }
+   @font-face {
+    font-family: 'Roboto';
+    src: url("assets/fonts/Roboto-Medium.ttf");
+    font-weight: 500;
+   }
+   @font-face {
+    font-family: 'Roboto';
+    src: url("assets/fonts/Roboto-Bold.ttf");
+    font-weight: 700;
+   }
    html {
        box-sizing: border-box;
        scroll-behavior: smooth;
@@ -466,7 +476,6 @@ textarea {
        background-image: url(./assets/img/Louvre.jpg);
        background-size: 1215px 750px;
        background-repeat: no-repeat;
-       height: 750px;
        background-position: calc(50% + 352px);
    }
    .h2{
@@ -788,7 +797,7 @@ textarea {
     .h4{
        font-family: 'Roboto'; 
        font-style: normal;
-       font-weight: 700;
+       font-weight: bold;
        font-size: 28px;
        line-height: 33px;
        color: #FFFFFF;
@@ -802,7 +811,7 @@ textarea {
         font-size: 22px;
         line-height: 26px;
         color: #FFFFFF;
-        padding-left: 260px;
+        padding-left: 240px;
     }
     .number {
         all: unset;
@@ -815,7 +824,7 @@ textarea {
         justify-content: space-between;
         align-items: center;
         margin-top: 12px;
-        margin-bottom: 36px;
+        margin-bottom: 35px;
         padding: 0 12px;
         width: 150px;
         height: 50px;
@@ -836,6 +845,107 @@ textarea {
         height: 2px;
         margin-right: 18px;
     }
+    .h4-t1{
+      margin-left: 50px;
+      margin-bottom: 11px;
+    }
+    .h4-t2{
+        margin-bottom: 50px;
+        margin-top: 15px;
+    }
+    .buy-button{
+        width: 175px;
+        height: 50px;
+        background: #FFFFFF;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 22px;
+        line-height: 26px;
+        color: #000000;
+        border: none;
+        border-radius: 2px;
+    }
+    .buy-button:hover{
+        background:#9D8665;
+    }
+    .contacts{
+        padding-top: 75px;
+        padding-bottom: 75px;
+    }
+    .contacts-container{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 113px;
+       
+    }
+    .h-contacts{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 33px;
+        color: #000000;
+        padding-bottom: 36px;
+    }
+    .p-contacts{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 22px;
+        line-height: 26px;
+        color: #000000;
+        padding-bottom: 20px;
+    }
+    .map{
+        background-image: url(./assets/img/map.png);
+        width: 960px;
+        height: 620px;
+    }
+    .footer{
+        padding-top: 75px;
+        padding-bottom: 75px;
+        padding-right: 240px;
+        padding-left: 240px;
+        height: 300px;
+    }
+    .footer-container{
+        display: flex;
+    }
+    .footer-list{
+        columns: 2;
+        column-gap: 100px;
+    }
+    .footer-navigation{
+        padding-left: 145px;
+    }
+    .links{
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 88px;
+        padding-left: 398px;
+    }
+    .links-2{
+        display: flex;
+    }
+    .youtube{
+    margin-right: 24px;
+    }
+    .instagram{
+        margin-right: 24px;
+    }
+    .facebook{
+        margin-right: 24px;
+    }
+    .twitter{
+        margin-right: 24px;
+    }
+    .pinterest{
+        margin-right: 24px;
+    }
+    
+
+
        
 
 

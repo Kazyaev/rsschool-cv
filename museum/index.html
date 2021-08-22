@@ -30,14 +30,14 @@
                         <a href="#tickets-section" class="header-link">Tickets</a>
                     </li>
                     <li class="header-item">
-                        <a href="" class="header-link">Contacts</a>
+                        <a href="#contacts-section" class="header-link">Contacts</a>
                     </li>
                 </ul>
                 </nav>        
         </div>
     </header>
     <main>
-        <section class="velcom dark">
+        <section class="velcom dark" id="welcome-section">
         <div class="container">
             <h2 class="h2 h2-w h2v-pos">Welcome<br>to the Louvre</h2>
             <p class="p1 p1-pos">From the castle to the museum</p>
@@ -159,7 +159,7 @@
                     </label>
                 </div> 
                 <div class="amount">
-                    <h4 class="h4">Amount</h4>
+                    <h4 class="h4 h4-t1">Amount</h4>
                     <p>Basic 18+</p>
                     <div class="button-container">
                     <button type="button" class="button-m" onclick="this.nextElementSibling.stepDown()"></button>
@@ -172,16 +172,79 @@
                         <input type="number" min="0" max="20" value="1" readonly class="number">
                         <button type="button" class="button-p" onclick="this.previousElementSibling.stepUp()">+</button>
                     </div>
-                    <h4 class="h4">Total €220</h4>
+                    <h4 class="h4 h4-t2">Total €220</h4>
+                    <button class="buy-button" type="button">Buy Now</button>
                 </div>   
                 </div>
                 </div>
             </div>
             </div>
         </section>
-        <section class="Contacts"></section>
+        <section class="contacts" id="contacts-section">
+            <div class="container">
+                <h2 class="h2 h2-g underline">Contacts</h2>
+                <div class="contacts-container">
+                    <div class="address">
+                        <h4 class="h-contacts">Palais Royal<br> Musee du Louvre</h4>
+                        <p class="p-contacts">address: 75001 Paris, France</p>
+                        <p class="p-contacts">phone: +33(0) 1 40 20 50 50</p>
+                        <p class="p-contacts">mail: info@louvre.fr</p>
+                    </div>
+                    <div class="map"></div>
+                </div>
+            </div>
+        </section>
     </main>
-    <footer>
+    <footer class="footer dark">
+        <dic class="container">
+            <div class="footer-container">
+                <div class="header-logo">
+                    <div class="logo"></div>
+                    <p class="logo-text footer-position">Louvre</p>
+            </div>
+            <nav class="footer-navigation">
+                <ul class="footer-list">
+                    <li class="footer-item">
+                        <a href="#welcome-section" class="header-link">Welcome</a>
+                    </li>
+                <li class="footer-item">
+                    <a href="#visiting-section" class="header-link">Visiting</a>
+                </li>
+                <li class="header-item">
+                    <a href="#explore-section" class="header-link">Explore</a>
+                </li>
+                <li class="header-item">
+                    <a href="#video-section" class="header-link">Video</a>
+                </li>
+                <li class="header-item">
+                    <a href="#tickets-section" class="header-link">Tickets</a>
+                </li>
+                <li class="header-item">
+                    <a href="#contacts-section" class="header-link">Contacts</a>
+                </li>
+            </ul>
+            </nav>   
+            <div class="links">
+                <ul class="links-2">
+                <li >
+                    <a href="https://www.youtube.com/user/louvre" class="youtube"><img src="./assets/svg/Youtube.svg"></a>
+                </li>
+                <li >
+                    <a href="https://www.instagram.com/museelouvre/" class="instagram"><img src="./assets/svg/Instagram.svg"></a>
+                </li>
+                <li >
+                    <a href="https://www.facebook.com/museedulouvre" class="facebook"><img src="./assets/svg/Facebook.svg"></a>
+                </li>
+                <li >
+                    <a href="http://twitter.com/museelouvre" class="twitter"><img src="./assets/svg/Twitter.svg"></a>
+                </li>
+                <li >
+                    <a href="https://www.pinterest.fr/museedulouvre/" class="pinterest"><img src="./assets/svg/Pinterest.svg"></a>
+                </li>
+            </ul>
+            </div>    
+            </div>
+        </dic>
     </footer>
 </body>
 </html>
